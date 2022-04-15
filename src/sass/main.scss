@@ -1,0 +1,133 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: inherit;
+  direction: rtl;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: sans-serif;
+}
+
+.ho-main-container {
+  max-width: 114rem;
+  margin: 10rem auto;
+}
+
+.ho-service-container {
+  margin-bottom: 0.5rem;
+
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+
+  margin-top: -7rem;
+}
+
+.ho-service__name--main {
+  background-image: linear-gradient(to right, #28b485, #7ed56f);
+  // background-image: linear-gradient(to right, #ffb900, #ff7730);
+  // background-image: linear-gradient(to right, #5643fa, #2998ff);
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 2rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+
+  z-index: 1;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.chevron-down {
+  stroke: #fff;
+  z-index: 1;
+
+  transition: all 0.5s;
+}
+
+.ho-service--detailes {
+  font-size: 1.5rem;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  justify-content: space-around;
+  // align-items: stretch;
+
+  padding: 2rem;
+  display: none;
+
+  border-bottom: 1px solid #999;
+  // background-color: #ffb900;
+  color: #fff;
+
+  transition: all 0.5s;
+
+  &:nth-child(odd) {
+    background-color: #fff;
+  }
+}
+
+.ho-service--detailes > * {
+  // background-color: #7ed56f;
+  padding: 3px;
+  border-radius: 3px;
+  color: #444;
+  text-align: center;
+  flex: 1;
+
+  border-right: 1px solid #ccc;
+}
+
+.ho-service__name--sub {
+  flex: 3;
+}
+// .ho-service__contactInfo {
+//   flex: 2;
+// }
+
+#serviceShow {
+  opacity: 0;
+  transform: translateY(6.3rem);
+  width: 100%;
+  height: 6.3rem;
+  z-index: 10;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+#serviceShow:checked ~ .ho-service--detailes {
+  display: flex;
+}
+
+#serviceShow:checked ~ .ho-service__name--main .chevron-down {
+  transform: rotateX(180deg);
+}
+.ho-service--sub-all {
+  display: none;
+}
+
+// a {
+//   &:link,
+//   &:visited {
+//     text-decoration: none;
+//     display: inline-block;
+//     padding: 1rem;
+//     background-color: #28b485;
+//     color: #fff;
+//     border-radius: 1rem;
+//   }
+// }
