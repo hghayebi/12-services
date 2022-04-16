@@ -32,6 +32,49 @@ serviceMainList.forEach((sMain) => {
 });
 // console.log(modifiedObj);
 
+const htmlHeader = `
+    
+<div class="ho-service--detailes ho-service--detailes--head">
+
+   <div class="ho-service__id">
+      <p class="ho-service__id__value">شناسه خدمت</p>
+    </div>
+
+
+    <div class="ho-service__name--sub">
+      <p class="ho-service__name--sub__value">عنوان خدمت</p>
+    </div>
+
+    <div class="ho-service__isElectronic">
+      <p class="ho-service__isElectronic__value">نحوه ارائه خدمت</p>
+    </div>
+
+    <div class="ho-service__guideLink">
+      <a href="" class="ho-service__guideLink__value">راهنما</a>
+    </div>
+
+    <div class="ho-service__mardomLink">
+      <a href="" class="ho-service__mardomLink__value">شناسنامه خدمت</a>
+    </div>
+
+    <div class="ho-service__link">
+      <a href="" class="ho-service__link__value">لینک خدمت</a>
+    </div>
+
+    <div class="ho-service__faqLink">
+      <a href="" class="ho-service__faqLink__value">FAQ</a>
+    </div>
+
+    <div class="ho-service__slaLink">
+      <a href="" class="ho-service__slaLink__value">SLA</a>
+    </div>
+
+    <div class="ho-service__contactInfo">
+      <p class="ho-service__contactInfo__value">تماس با ما</p>
+    </div>
+
+  </div>
+`;
 // Object.entries(modifiedObj).forEach((item) => console.log(item));
 Object.entries(modifiedObj).forEach(([serviceMain, ServiceDetailes]) => {
   let html0 = `
@@ -48,7 +91,7 @@ Object.entries(modifiedObj).forEach(([serviceMain, ServiceDetailes]) => {
         
       </div>
     
-
+      ${htmlHeader}
       
   `;
 
@@ -58,6 +101,12 @@ Object.entries(modifiedObj).forEach(([serviceMain, ServiceDetailes]) => {
       `
     
     <div class="ho-service--detailes">
+
+       <div class="ho-service__id">
+          <p class="ho-service__id__value">${service.serviceId}</p>
+        </div>
+
+
         <div class="ho-service__name--sub">
           <p class="ho-service__name--sub__value">${service.serviceNameSub}</p>
         </div>
