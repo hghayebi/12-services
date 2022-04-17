@@ -111,10 +111,6 @@
   &:nth-child(odd) {
     background-color: #fff;
   }
-
-  &--heading {
-    // font-size: 1.4rem;
-  }
 }
 
 .ho-service--detailes > * {
@@ -130,6 +126,10 @@
   flex: 3;
 }
 .ho-service__contactInfo {
+  flex: 2;
+}
+
+.ho-service__isElectronic {
   flex: 2;
 }
 

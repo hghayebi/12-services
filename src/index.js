@@ -30,7 +30,7 @@ serviceMainList.forEach((sMain) => {
     }
   });
 });
-// console.log(modifiedObj);
+console.log(modifiedObj);
 
 const htmlHeader = `
     
@@ -75,6 +75,7 @@ const htmlHeader = `
 
   </div>
 `;
+
 // Object.entries(modifiedObj).forEach((item) => console.log(item));
 Object.entries(modifiedObj).forEach(([serviceMain, ServiceDetailes]) => {
   let html0 = `
@@ -126,7 +127,7 @@ Object.entries(modifiedObj).forEach(([serviceMain, ServiceDetailes]) => {
         <div class="ho-service__mardomLink">
           <a href="${
             service.mardomLink
-          }" class="ho-service__mardomLink__value">شناسنامه خدمت</a>
+          }" class="ho-service__mardomLink__value"><img src="https://aped.ir/Dorsapax/Data/Sub_0/File/4cgs.jpg" width="120px"  alt="سامانه مدیریت خدمات دولت"  style="width: 100px !important;"></a>
         </div>
 
         <div class="ho-service__link">
