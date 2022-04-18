@@ -26,8 +26,8 @@
   direction: rtl;
 
   font-family: iransansweb, sans-serif;
-  // max-width: 1170px;
-  // margin: 10rem auto;
+  max-width: 1170px;
+  margin: 1rem auto;
 }
 
 .ho-service-container {
@@ -97,7 +97,7 @@
   gap: 15px;
 
   justify-content: space-around;
-  // align-items: stretch;
+  align-items: center;
 
   padding: 15px;
   display: none;
@@ -160,5 +160,15 @@ a {
   &:visited {
     text-decoration: none;
     color: #444;
+  }
+}
+
+.ho-service--detailes--head {
+  // background-color: #7ed56f8e !important;
+  font-size: 16px;
+  font-weight: bold !important;
+
+  & > * {
+    // color: #fff !important;
   }
 }

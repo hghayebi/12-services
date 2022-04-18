@@ -36,7 +36,7 @@ const htmlHeader = `
     
 <div class="ho-service--detailes ho-service--detailes--head">
 
-   <div class="ho-service__id">
+   <div class="ho-service__id ">
       <p class="ho-service__id__value">شناسه خدمت</p>
     </div>
 
